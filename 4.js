@@ -10,7 +10,7 @@ function checkArray(array, targetSum) {
     //Цикл for of для итерирования по array
     for (let num of array) {
         let difference = targetSum - num
-        //Ищем разницу в хеш-таблице.
+        //Ищем полученную разницу в хеш-таблице.
         if (map.has(difference)) {
             return [num, difference]
         }
