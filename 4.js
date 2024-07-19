@@ -3,6 +3,7 @@ let array = [3, 5, -4, 8, 11, 1, -1, 6]
 let targetSum = 8
 
 let result = checkArray(array, targetSum)
+
 console.log(result)
 function checkArray(array, targetSum) {
     //создаем хеш-таблицу для записи чисел, который уже были отсмотрены в массиве
