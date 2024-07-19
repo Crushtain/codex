@@ -5,7 +5,7 @@ import {fileURLToPath} from 'url';
 //Находим путь к папке с файлами. Код должен выполняться из директории, где лежит нужная папка.
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const folderPath = path.join(__dirname, 'Новая Папка (2)')
+const folderPath = path.join(__dirname, 'Имя папки')
 // Искомая подстрока
 const searchString = 'Любая подстрока';
 
