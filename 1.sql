@@ -1,4 +1,5 @@
 -- 1.1
+
 select d.id
 from public.departments d
 where d.id not in (select department_id from public.dep_names);

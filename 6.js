@@ -1,11 +1,13 @@
 import fs from "fs"
 import path from "path"
+import {fileURLToPath} from 'url';
 
-
-// Путь к папке с файлами
-const folderPath = 'C:\\Новая папка';
+//Находим путь к папке с файлами
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const folderPath = path.join(__dirname, 'Новая Папка (2)')
 // Искомая подстрока
-const searchString = 'Найди мне Челси в таблице АПЛ ';
+const searchString = 'Любая подстрока';
 
 function readFile(filePath) {
     return fs.readFileSync(filePath, 'utf8');
